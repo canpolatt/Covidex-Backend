@@ -8,6 +8,9 @@
 <a href="https://projectlombok.org/"><img src="https://user-images.githubusercontent.com/61492486/120070357-c3f05d80-c092-11eb-8e21-1b6e0c14af1a.png" width="20px"></img></a>
 <a href="https://www.postgresql.org/"><img src="https://user-images.githubusercontent.com/61492486/120071560-ac1bd800-c098-11eb-86dd-a78fbbb0f9f7.png" width="60px"></img></a>
 
+## ER Diagram
+![er_diagram](https://user-images.githubusercontent.com/61492486/121853465-a27dab80-ccf9-11eb-9b1e-662a3fc61cbd.png)
+
 
 **Spring - JavaSE-11 based.**
 * Dependencies
