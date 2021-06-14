@@ -1,4 +1,14 @@
+
 # Covidex-Backend
+**Spring - JavaSE-11 based.**
+* Dependencies
+  * Spring Boot DevTools
+  * Spring Web
+  * Spring Data JPA
+  * PostgreSQL Driver
+  * Lombok
+  * Springfox Swagger
+  * Springfox Swagger UI
 
 ## Technologies
 <a href="https://www.java.com/tr/"><img src="https://user-images.githubusercontent.com/61492486/120069442-ae793480-c08e-11eb-8a09-d9c9d4775d18.png" width="70px"></img></a>
@@ -9,15 +19,9 @@
 <a href="https://www.postgresql.org/"><img src="https://user-images.githubusercontent.com/61492486/120071560-ac1bd800-c098-11eb-86dd-a78fbbb0f9f7.png" width="60px"></img></a>
 
 ## ER Diagram
-![er_diagram](https://user-images.githubusercontent.com/61492486/121853465-a27dab80-ccf9-11eb-9b1e-662a3fc61cbd.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/61492486/121853580-c0e3a700-ccf9-11eb-8f14-5f92fddad3ab.png" alt="ER Diagram" />
+</p>
 
 
-**Spring - JavaSE-11 based.**
-* Dependencies
-  * Spring Boot DevTools
-  * Spring Web
-  * Spring Data JPA
-  * PostgreSQL Driver
-  * Lombok
-  * Springfox Swagger
-  * Springfox Swagger UI
+
