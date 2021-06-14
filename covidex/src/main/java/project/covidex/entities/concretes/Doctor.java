@@ -7,7 +7,9 @@ import javax.persistence.Entity;
 
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,7 +24,8 @@ import project.covidex.entities.abstracts.User;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="doctors")
-@JsonIgnoreProperties({"hibernateLazyInitializer","handler","doctorContacts"})
+//@JsonIgnoreProperties({"hibernateLazyInitializer","handler","doctorContacts"})
+//@JsonIgnoreProperties({"hibernateLazyInitializer","handler","doctorContacts"})
 public class Doctor extends User{
 	
 	
