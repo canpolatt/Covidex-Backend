@@ -4,6 +4,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,16 @@ public class PatientsController {
 	
 	@Autowired
 	private PatientService patientService;
+	
+	@GetMapping("/getTotalCase")
+	public int getTotalCase() {
+		return this.patientService.getTotalCase();
+	}
+	
+	@GetMapping("/getActiveCase")
+	public int getActiveCase() {
+		return this.patientService.getActiveCase();
+	}
 	
 	@PostMapping("/add")
 	DataResult<Patient> add(@Valid @RequestBody PatientRegisterDto patientRegisterDto){

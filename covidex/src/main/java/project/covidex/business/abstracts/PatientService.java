@@ -5,4 +5,6 @@ import project.covidex.entities.concretes.Patient;
 
 public interface PatientService {
 	DataResult<Patient> add(Patient patient);
+	public int getTotalCase();
+	public int getActiveCase();
 }

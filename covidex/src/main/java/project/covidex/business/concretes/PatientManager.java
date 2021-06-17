@@ -21,4 +21,16 @@ public class PatientManager implements PatientService{
 		return new SuccessDataResult<Patient>(this.patientDao.save(patient),"Hasta eklendi!!!");
 	}
 
+	@Override
+	public int getTotalCase() {
+		// TODO Auto-generated method stub
+		return this.patientDao.getTotalCase();
+	}
+
+	@Override
+	public int getActiveCase() {
+		// TODO Auto-generated method stub
+		return this.patientDao.getActiveCase();
+	}
+
 }
