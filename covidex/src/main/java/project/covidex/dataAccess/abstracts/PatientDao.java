@@ -13,4 +13,6 @@ public interface PatientDao extends JpaRepository<Patient, Integer> {
 	@Query("select count(*) from Patient where status=true")
 	public int getActiveCase();
 	
+	//@Query("from Patient p where p.identityNumber=:identityNumber")
+	Patient getByidentityNumber(String identityNumber);	
 }

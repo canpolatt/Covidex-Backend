@@ -8,10 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import project.covidex.business.abstracts.PatientService;
 import project.covidex.core.utilities.results.DataResult;
+import project.covidex.core.utilities.results.Result;
 import project.covidex.entities.concretes.Patient;
 import project.covidex.entities.dtos.PatientRegisterDto;
 
@@ -33,6 +35,13 @@ public class PatientsController {
 	public int getActiveCase() {
 		return this.patientService.getActiveCase();
 	}
+	
+	
+	@GetMapping("/getByIdentityNumber")
+	Result findByidentityNumber(@RequestParam String identityNumber) {
+		return this.patientService.getByidentityNumber(identityNumber);
+	}
+	
 	
 	@PostMapping("/add")
 	DataResult<Patient> add(@Valid @RequestBody PatientRegisterDto patientRegisterDto){

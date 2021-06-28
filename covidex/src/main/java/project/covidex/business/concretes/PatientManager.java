@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import project.covidex.business.abstracts.PatientService;
 import project.covidex.core.utilities.results.DataResult;
+import project.covidex.core.utilities.results.Result;
 import project.covidex.core.utilities.results.SuccessDataResult;
 import project.covidex.dataAccess.abstracts.PatientDao;
 import project.covidex.entities.concretes.Patient;
@@ -31,6 +32,12 @@ public class PatientManager implements PatientService{
 	public int getActiveCase() {
 		// TODO Auto-generated method stub
 		return this.patientDao.getActiveCase();
+	}
+
+	@Override
+	public DataResult<Patient> getByidentityNumber(String identityNumber) {
+		// TODO Auto-generated method stub
+		return new SuccessDataResult<Patient>(this.patientDao.getByidentityNumber(identityNumber),"Hasta başarıyla getirildi!!");
 	}
 
 }
