@@ -9,9 +9,11 @@
   * Lombok
   * Springfox Swagger
   * Springfox Swagger UI
+  * Spring Security Core
+  * JJWT
 
 ## Technologies
-<a href="https://www.java.com/tr/">https://user-images.githubusercontent.com/61492486/124131030-12c15680-da88-11eb-877d-ac1207c1d896.png</a>
+<a href="https://www.java.com/tr/"><img src="https://user-images.githubusercontent.com/61492486/120069442-ae793480-c08e-11eb-8a09-d9c9d4775d18.png" width="70px"></img></a>
 <a href="https://spring.io/"><img src="https://user-images.githubusercontent.com/61492486/120069606-71617200-c08f-11eb-924d-310d7ac4acf2.png" width="85px"></img></a>
 <a href="https://hibernate.org/"><img src="https://user-images.githubusercontent.com/61492486/120102598-73d9cf80-c154-11eb-8dee-5ec2aff7f870.png" width="70px"></img></a>
 <a href="https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api"><img src="https://user-images.githubusercontent.com/61492486/120070373-dbc7e180-c092-11eb-8d5f-11d5a720b547.png" width="60px"></img></a>
