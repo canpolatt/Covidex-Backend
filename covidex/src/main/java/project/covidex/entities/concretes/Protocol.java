@@ -2,11 +2,16 @@ package project.covidex.entities.concretes;
 
 
 
+import java.time.LocalDate;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 //import javax.persistence.JoinColumn;
 //import javax.persistence.ManyToOne;
 //import javax.persistence.OneToOne;
@@ -36,12 +41,13 @@ public class Protocol {
 	private String identityNumber;
 	
 	
-//	@ManyToOne
-//	@JoinColumn(name="identity_number")
-//	private Patient patient;
-//	
-//	@OneToOne(mappedBy = "protocol")
-//	@PrimaryKeyJoinColumn
-//	private ProtocolDetail protocolDetail;
-
+	@Column(name="date_of_protocol")
+	private LocalDate dateOfProtocol;
+	
+	@Column(name="details")
+	private String detail;
+	
+	@Column(name="name_of_doctor")
+	private String nameOfDoctor;
+	
 }

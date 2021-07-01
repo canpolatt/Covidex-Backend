@@ -37,6 +37,11 @@ public class DoctorsController {
 		return this.doctorService.getByDoctorId(id);
 	}
 	
+   @GetMapping("/getByIdentity")
+   DataResult<Doctor> getBydoctorIdentity(@RequestParam String username){
+	   return this.doctorService.getBydoctorIdentity(username);
+   }
+	
 	@PostMapping("/add")
 	DataResult<Doctor> add(@Valid @RequestBody DoctorRegisterDto doctorRegisterDto){
 		Doctor doctor=new Doctor();	

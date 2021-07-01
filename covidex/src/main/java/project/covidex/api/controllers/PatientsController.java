@@ -1,5 +1,7 @@
 package project.covidex.api.controllers;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,7 @@ import project.covidex.core.utilities.results.DataResult;
 import project.covidex.core.utilities.results.Result;
 import project.covidex.entities.concretes.Patient;
 import project.covidex.entities.dtos.PatientRegisterDto;
+import project.covidex.entities.dtos.PatientWithProtocolDto;
 
 
 @RestController
@@ -40,6 +43,11 @@ public class PatientsController {
 	@GetMapping("/getByIdentityNumber")
 	Result findByidentityNumber(@RequestParam String identityNumber) {
 		return this.patientService.getByidentityNumber(identityNumber);
+	}
+	
+	@GetMapping("/getAllInformationByIdentityNumber")
+	public DataResult<List<PatientWithProtocolDto>> getAllInformationByIdentityNumber(@RequestParam String identityNumber){
+		return this.patientService.getAllInformationByIdentityNumber(identityNumber);
 	}
 	
 	

@@ -3,6 +3,7 @@ package project.covidex.business.concretes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import net.bytebuddy.asm.Advice.This;
 import project.covidex.business.abstracts.DoctorService;
 import project.covidex.core.utilities.results.DataResult;
 import project.covidex.core.utilities.results.SuccessDataResult;
@@ -31,6 +32,13 @@ public class DoctorManager implements DoctorService {
 	public DataResult<Doctor> getByDoctorId(int id) {
 		// TODO Auto-generated method stub
 		return new SuccessDataResult<Doctor>(this.doctorDao.getById(id));
+	}
+
+
+	@Override
+	public DataResult<Doctor> getBydoctorIdentity(String username) {
+		// TODO Auto-generated method stub
+		return new SuccessDataResult<Doctor>(this.doctorDao.getBydoctorIdentity(username));
 	}
 
 }

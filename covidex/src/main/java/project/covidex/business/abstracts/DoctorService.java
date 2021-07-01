@@ -6,4 +6,5 @@ import project.covidex.entities.concretes.Doctor;
 public interface DoctorService {
 	DataResult<Doctor> add(Doctor doctor);
 	DataResult<Doctor> getByDoctorId(int id);
+	DataResult<Doctor> getBydoctorIdentity(String username);
 }

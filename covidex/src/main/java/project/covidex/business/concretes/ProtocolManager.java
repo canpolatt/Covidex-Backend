@@ -1,5 +1,7 @@
 package project.covidex.business.concretes;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,12 @@ public class ProtocolManager implements ProtocolService{
 	@Override
 	public DataResult<Protocol> add(Protocol protocol) {
 		return new SuccessDataResult<Protocol>(this.protocolDao.save(protocol));
+	}
+
+	@Override
+	public List <Protocol> findAllIdentityNumber(String identityNumber) {
+		// TODO Auto-generated method stub
+		return this.protocolDao.getByIdentityNumber(identityNumber);
 	}
 
 }
