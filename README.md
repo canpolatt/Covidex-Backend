@@ -20,7 +20,7 @@
 
 ## ER Diagram
 <p align="center">
-<img src="https://user-images.githubusercontent.com/61492486/121853580-c0e3a700-ccf9-11eb-8f14-5f92fddad3ab.png" alt="ER Diagram" />
+ ![Untitled](https://user-images.githubusercontent.com/61492486/124131030-12c15680-da88-11eb-877d-ac1207c1d896.png)
 </p>
 
 
